@@ -2,14 +2,14 @@ package com.github.nllptr.model;
 
 import java.time.LocalDateTime;
 
-public class Flustatus {
+public class FluStatus {
 
     private String status;
     private LocalDateTime fetchTime;
 
-    public Flustatus(String status) {
+    public FluStatus(String status, LocalDateTime fetchTime) {
         this.status = status;
-        this.fetchTime = LocalDateTime.now();
+        this.fetchTime = fetchTime;
     }
 
     public LocalDateTime getFetchTime() {

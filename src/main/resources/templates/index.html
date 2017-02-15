@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Fågelstatus</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Kranky" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<body>
+<div id="content">
+    <div class="circle">
+        <div class="circle-status">
+            <div><h3>Skyddsnivå</h3></div>
+            <div><h1 th:text="${status}"></h1></div>
+        </div>
+    </div>
+    <div>
+        Informationen är hämtad från <a th:href="${url}">jordbruksverket</a>. Senaste hämtningen gjordes <span th:text="${fetchTime}" />.
+    </div>
+</div>
+</body>
+</html>
